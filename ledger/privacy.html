@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ledger Privacy Policy</title>
+  <meta name="description" content="How Ledger, by Kornerstack, collects, uses and protects your information.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--
+    Source of truth for https://kornerstack.com/ledger/privacy
+    (EXPO_PUBLIC_PRIVACY_POLICY_URL, opened from Settings → Privacy Policy via lib/legal.ts).
+
+    Every factual claim below was written against the code as of the effective date.
+    When the app starts collecting something new, adds a third-party service, or changes
+    what deletion removes, update this page and its "Effective" date in the same change.
+  -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f6f7;
+      --border: #e4e4e7;
+      --text: #18181b;
+      --text-secondary: #52525b;
+      --primary: #4f46e5;
+      --primary-soft: rgba(79, 70, 229, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f0f0f;
+        --surface: #1a1a1a;
+        --border: #2e2e2e;
+        --text: #f5f5f5;
+        --text-secondary: #a3a3a3;
+        --primary: #818cf8;
+        --primary-soft: rgba(129, 140, 248, 0.1);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #f5f5f5;
+      --text-secondary: #a3a3a3;
+      --primary: #818cf8;
+      --primary-soft: rgba(129, 140, 248, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 16px 80px;
+    }
+    header { margin-bottom: 32px; }
+    .eyebrow {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+    h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; font-weight: 700; }
+    .meta { color: var(--text-secondary); font-size: 14px; margin: 0; }
+    h2 {
+      font-size: 21px;
+      margin: 44px 0 12px;
+      padding-top: 8px;
+      font-weight: 700;
+      scroll-margin-top: 16px;
+    }
+    h3 { font-size: 16px; margin: 24px 0 6px; font-weight: 600; }
+    p, li { color: var(--text); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--primary); text-underline-offset: 2px; }
+    .summary {
+      background: var(--primary-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 0 0 8px;
+    }
+    .summary h2 { margin: 0 0 8px; padding: 0; font-size: 17px; }
+    .summary ul { margin: 0; }
+    nav.toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin: 24px 0 0;
+      font-size: 15px;
+    }
+    nav.toc ol { margin: 8px 0 0; padding-left: 22px; }
+    nav.toc li { margin: 3px 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      min-width: 480px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--text-secondary); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      main { padding-top: 32px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Ledger by Kornerstack</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Effective October 7, 2026</p>
+  </header>
+
+  <section class="summary" aria-labelledby="short-version">
+    <h2 id="short-version">The short version</h2>
+    <ul>
+      <li>We collect the financial records you choose to enter so the app can show them back to you. We don't connect to your bank.</li>
+      <li>We do not sell your data, share it with advertisers, or use it to train AI models.</li>
+      <li>We use a small number of service providers: one for in-app purchases, one for push notifications. Each gets only what it needs.</li>
+      <li>You can export your data, delete your financial records, or delete your whole account from inside the app at any time.</li>
+    </ul>
+  </section>
+
+  <nav class="toc" aria-label="Contents">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#who-we-are">Who we are</a></li>
+      <li><a href="#what-we-collect">Information we collect</a></li>
+      <li><a href="#how-we-use">How we use it</a></li>
+      <li><a href="#sharing">Who we share it with</a></li>
+      <li><a href="#device">What stays on your device</a></li>
+      <li><a href="#storage">Where it's stored and how it's protected</a></li>
+      <li><a href="#retention">How long we keep it</a></li>
+      <li><a href="#choices">Your choices and controls</a></li>
+      <li><a href="#rights">Your privacy rights</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="who-we-are">1. Who we are</h2>
+  <p>
+    Ledger is a personal finance app for tracking subscriptions, budgets, income and mileage. It is
+    made by Kornerstack ("we", "us"). Kornerstack is responsible for the personal information
+    described in this policy, which applies to the Ledger apps for iOS, Android and the web.
+  </p>
+
+  <h2 id="what-we-collect">2. Information we collect</h2>
+
+  <h3>Account information</h3>
+  <p>When you sign up: your email address and password. We store a hashed version of your password, never the password itself.</p>
+
+  <h3>Profile information</h3>
+  <p>
+    What you provide during onboarding or in Settings: your name, profile photo (optional), country,
+    preferred currency, time zone, tax filing status and state or province, and the goals you
+    selected when you started.
+  </p>
+
+  <h3>Financial records you enter</h3>
+  <p>Ledger only knows what you type in or attach. Depending on which features you use, this includes:</p>
+  <ul>
+    <li><strong>Subscriptions:</strong> service names, prices, billing cycles, renewal dates, payment history and notes.</li>
+    <li><strong>Budgets:</strong> budget names and limits, categories, expenses, savings entries and notes.</li>
+    <li><strong>Income:</strong> income sources, earnings entries, fees, client names, tax figures and notes.</li>
+    <li><strong>Mileage:</strong> trips you log, including distance, date and purpose. Ledger does not track your location; trips are entered manually.</li>
+    <li><strong>Tax estimates:</strong> quarterly estimates calculated from the income you record.</li>
+    <li><strong>Attachments:</strong> receipt and invoice images you choose to attach, from your camera or photo library.</li>
+  </ul>
+  <p>We do not connect to your bank or card accounts, and we never ask for account numbers or card numbers.</p>
+
+  <h3>Notification settings</h3>
+  <p>
+    If you turn on notifications, we store your notification preferences and a push token that
+    identifies your device to Apple's or Google's notification service.
+  </p>
+
+  <h3>Purchase information</h3>
+  <p>
+    If you buy a paid plan, the purchase is processed by Apple or Google. We never see your payment
+    card details. We receive your plan and its expiry date so the app knows which features to unlock.
+  </p>
+
+  <h3>Usage and diagnostic information</h3>
+  <p>To keep the app working and understand how it is used, we collect:</p>
+  <ul>
+    <li><strong>Screen views:</strong> which screens are opened, with a random per-launch session ID, your platform (iOS, Android or web), app version and account ID.</li>
+    <li><strong>Error reports:</strong> when something goes wrong, the error message, technical details about where it happened, your platform, app version and account ID. Before an error report leaves your device, we automatically remove amounts, names, notes, email addresses and other financial fields from it.</li>
+  </ul>
+  <p>We do not use advertising identifiers, and we do not use third-party analytics or advertising SDKs.</p>
+
+  <h2 id="how-we-use">3. How we use your information</h2>
+  <ul>
+    <li><strong>To provide the app:</strong> storing your records, syncing them across your devices, calculating totals, budget progress and tax estimates, and converting between currencies.</li>
+    <li><strong>To send notifications you've turned on:</strong> subscription renewal reminders, quarterly tax reminders, income logging reminders and weekly summaries.</li>
+    <li><strong>To manage your plan:</strong> checking whether you have a paid plan and applying the usage limits of your plan.</li>
+    <li><strong>To keep the app reliable and secure:</strong> diagnosing errors, preventing abuse and protecting your account.</li>
+    <li><strong>To improve the app:</strong> understanding which features are used, from the screen-view data described above.</li>
+    <li><strong>To communicate with you:</strong> responding to your requests and sending essential account messages, such as password resets.</li>
+  </ul>
+  <p>
+    We process your information to provide the service you asked for, with your consent (for
+    example, notifications and photo access, which you can withdraw at any time), and for our
+    legitimate interest in keeping the app secure and working well.
+  </p>
+  <p>We do not sell your personal information, share it for cross-context behavioural advertising, or use your financial records to train AI models.</p>
+
+  <h2 id="sharing">4. Who we share it with</h2>
+  <p>We share information only with the service providers below, and only what each needs to do its job for us:</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Provider</th><th>Purpose</th><th>What they receive</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>RevenueCat</td>
+          <td>Managing in-app purchases and subscriptions</td>
+          <td>Your Ledger account ID and purchase records from Apple or Google</td>
+        </tr>
+        <tr>
+          <td>Expo (650 Industries), Apple and Google</td>
+          <td>Delivering push notifications</td>
+          <td>Your device's push token and the notification text. Notification text can include a subscription's name and amount, or an estimated tax amount.</td>
+        </tr>
+        <tr>
+          <td>Apple App Store and Google Play</td>
+          <td>Processing payments</td>
+          <td>Handled entirely by Apple or Google under their own privacy policies</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    To show currency conversions, our server downloads exchange rates from Open Exchange Rates. That
+    request contains no information about you.
+  </p>
+  <p>
+    We may also disclose information if required by law, to protect the rights, property or safety
+    of our users or others, or as part of a merger, acquisition or sale of assets. If ownership
+    changes, this policy will continue to apply to your information unless you are notified otherwise.
+  </p>
+
+  <h2 id="device">5. What stays on your device</h2>
+  <ul>
+    <li><strong>Sign-in session:</strong> stored in your device's secure storage (the iOS Keychain or Android Keystore).</li>
+    <li><strong>Offline copy:</strong> a copy of your recent records is cached on your device so the app works without a connection. Changes made offline are kept on your device until they sync.</li>
+    <li><strong>Face ID / fingerprint:</strong> if you turn on App Lock, your device checks your biometrics. Ledger never receives or stores biometric data.</li>
+    <li><strong>Camera and photos:</strong> Ledger only accesses your camera or photo library when you choose to attach a receipt, invoice or profile photo. Only the image you pick is uploaded.</li>
+  </ul>
+
+  <h2 id="storage">6. Where it's stored and how it's protected</h2>
+  <p>
+    Your account and records are stored on servers we operate. Our service providers may process
+    information in other countries, including the United States, where it may be accessible to
+    authorities under local law. Where required, we use appropriate safeguards for these transfers.
+  </p>
+  <p>
+    All data is encrypted in transit using HTTPS. Access to your records is restricted to your own
+    account by server-side rules, attachments can only be viewed through short-lived access links,
+    and we limit internal access to what's needed to run the service. No system is perfectly secure,
+    but we work to protect your information and will notify you and the relevant authorities of a
+    breach where the law requires.
+  </p>
+
+  <h2 id="retention">7. How long we keep it</h2>
+  <ul>
+    <li><strong>Your account and records:</strong> kept while your account is active, until you delete them.</li>
+    <li><strong>After you delete your account:</strong> your account, profile, records and attachments are deleted immediately. Copies may remain in backups for a limited period until they are overwritten.</li>
+    <li><strong>Usage and error data:</strong> when you delete your account, the link between these records and your account is removed. The remaining de-identified records may be kept to help us maintain the app.</li>
+  </ul>
+
+  <h2 id="choices">8. Your choices and controls</h2>
+  <p>You can do all of the following yourself, in the app:</p>
+  <ul>
+    <li><strong>Access and correct</strong> your profile and records at any time.</li>
+    <li><strong>Export</strong> your data as CSV from Settings → Export Data.</li>
+    <li><strong>Delete your financial records</strong> while keeping your account, from Settings → Data &amp; Privacy.</li>
+    <li><strong>Delete your account</strong> and everything in it, from Settings → Data &amp; Privacy.</li>
+    <li><strong>Turn notifications off</strong> in Settings → Notifications or in your device settings.</li>
+    <li><strong>Revoke camera or photo access</strong> in your device settings.</li>
+  </ul>
+
+  <h2 id="rights">9. Your privacy rights</h2>
+  <p>
+    You can ask us to access, correct or delete your personal information, or ask questions about how
+    we handle it, by emailing <a href="mailto:privacy@kornerstack.com">privacy@kornerstack.com</a>.
+    We'll respond within 30 days and may need to verify your identity first. We won't treat you
+    differently for exercising your rights.
+  </p>
+
+  <h3>Canada</h3>
+  <p>
+    We handle personal information in accordance with the <em>Personal Information Protection and
+    Electronic Documents Act</em> (PIPEDA) and applicable provincial law. You may withdraw consent at
+    any time, subject to legal or contractual limits. If you're not satisfied with our response,
+    you can contact the Office of the Privacy Commissioner of Canada at
+    <a href="https://www.priv.gc.ca">priv.gc.ca</a>.
+  </p>
+
+  <h3>European Economic Area and United Kingdom</h3>
+  <p>
+    You have the right to access, rectify, erase, restrict or object to processing of your personal
+    data, and to receive it in a portable format (the in-app CSV export does this). Where we rely on
+    consent, you may withdraw it at any time. You may also lodge a complaint with your local data
+    protection authority.
+  </p>
+
+  <h3>California and other US states</h3>
+  <p>
+    Depending on where you live, you may have the right to know what personal information we collect,
+    to access and delete it, to correct it, and to opt out of its sale or sharing. We do not sell
+    personal information or share it for cross-context behavioural advertising, and we do not use
+    sensitive personal information for purposes other than providing the service.
+  </p>
+
+  <h2 id="children">10. Children</h2>
+  <p>
+    Ledger is not directed to children under 16, and we don't knowingly collect personal information
+    from them. If you believe a child has given us personal information, contact us and we'll delete it.
+  </p>
+
+  <h2 id="changes">11. Changes to this policy</h2>
+  <p>
+    We may update this policy as the app changes. We'll update the effective date above, and for
+    material changes we'll notify you in the app or by email before they take effect.
+  </p>
+
+  <h2 id="contact">12. Contact us</h2>
+  <p>
+    Questions or requests about your privacy:<br>
+    Kornerstack, attention Privacy<br>
+    <a href="mailto:privacy@kornerstack.com">privacy@kornerstack.com</a>
+  </p>
+
+  <footer>
+    &copy; 2026 Kornerstack. Ledger is a trademark of Kornerstack.
+    &middot; <a href="https://kornerstack.com/ledger/terms">Terms of Service</a>
+  </footer>
+</main>
+</body>
+</html>
