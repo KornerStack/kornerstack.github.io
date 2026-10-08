@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ledger Terms of Service</title>
+  <meta name="description" content="The terms that apply when you use Ledger, by Kornerstack.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!--
+    Source of truth for https://kornerstack.com/ledger/terms
+    (EXPO_PUBLIC_TERMS_OF_SERVICE_URL, opened from Settings → Terms of Service via lib/legal.ts).
+    Styles are kept identical to legal/privacy.html — change both together.
+
+    Section 8 (Paid plans) is written conditionally because PAID_PLANS_ENABLED
+    (constants/features.ts) is false. Revisit it when plans go on sale.
+  -->
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f6f7;
+      --border: #e4e4e7;
+      --text: #18181b;
+      --text-secondary: #52525b;
+      --primary: #4f46e5;
+      --primary-soft: rgba(79, 70, 229, 0.08);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0f0f0f;
+        --surface: #1a1a1a;
+        --border: #2e2e2e;
+        --text: #f5f5f5;
+        --text-secondary: #a3a3a3;
+        --primary: #818cf8;
+        --primary-soft: rgba(129, 140, 248, 0.1);
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --border: #2e2e2e;
+      --text: #f5f5f5;
+      --text-secondary: #a3a3a3;
+      --primary: #818cf8;
+      --primary-soft: rgba(129, 140, 248, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 16px 80px;
+    }
+    header { margin-bottom: 32px; }
+    .eyebrow {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin: 0 0 8px;
+    }
+    h1 { font-size: 34px; line-height: 1.2; margin: 0 0 12px; font-weight: 700; }
+    .meta { color: var(--text-secondary); font-size: 14px; margin: 0; }
+    h2 {
+      font-size: 21px;
+      margin: 44px 0 12px;
+      padding-top: 8px;
+      font-weight: 700;
+      scroll-margin-top: 16px;
+    }
+    h3 { font-size: 16px; margin: 24px 0 6px; font-weight: 600; }
+    p, li { color: var(--text); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    a { color: var(--primary); text-underline-offset: 2px; }
+    .summary {
+      background: var(--primary-soft);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 0 0 8px;
+    }
+    .summary h2 { margin: 0 0 8px; padding: 0; font-size: 17px; }
+    .summary ul { margin: 0; }
+    nav.toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 20px;
+      margin: 24px 0 0;
+      font-size: 15px;
+    }
+    nav.toc ol { margin: 8px 0 0; padding-left: 22px; }
+    nav.toc li { margin: 3px 0; }
+    .table-wrap { overflow-x: auto; margin: 12px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 15px;
+      min-width: 480px;
+    }
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    th { color: var(--text-secondary); font-weight: 600; font-size: 13px; text-transform: uppercase; letter-spacing: 0.03em; }
+    footer {
+      margin-top: 56px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+    @media (max-width: 480px) {
+      main { padding-top: 32px; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Ledger by Kornerstack</p>
+    <h1>Terms of Service</h1>
+    <p class="meta">Effective October 7, 2026</p>
+  </header>
+
+  <section class="summary" aria-labelledby="short-version">
+    <h2 id="short-version">The short version</h2>
+    <ul>
+      <li>Ledger helps you organise your own financial records. It is not a bank, and it is not financial, tax or legal advice.</li>
+      <li>Tax estimates, currency conversions and totals are approximations. Check anything important with a professional before you rely on it.</li>
+      <li>Your data stays yours. You can export it or delete it whenever you like.</li>
+      <li>Ledger is currently free during its beta. If we introduce paid plans, purchases go through Apple or Google and you can cancel at any time.</li>
+    </ul>
+  </section>
+
+  <nav class="toc" aria-label="Contents">
+    <strong>Contents</strong>
+    <ol>
+      <li><a href="#agreement">Agreement to these terms</a></li>
+      <li><a href="#service">The service</a></li>
+      <li><a href="#not-advice">Not financial, tax or legal advice</a></li>
+      <li><a href="#account">Your account</a></li>
+      <li><a href="#your-content">Your content</a></li>
+      <li><a href="#acceptable-use">Acceptable use</a></li>
+      <li><a href="#beta">Beta and plan limits</a></li>
+      <li><a href="#paid-plans">Paid plans</a></li>
+      <li><a href="#third-party">Third-party services</a></li>
+      <li><a href="#ip">Our intellectual property</a></li>
+      <li><a href="#termination">Ending your use of Ledger</a></li>
+      <li><a href="#disclaimers">Disclaimers</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#indemnity">Indemnity</a></li>
+      <li><a href="#law">Governing law and disputes</a></li>
+      <li><a href="#app-stores">App store terms</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+      <li><a href="#general">General</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="agreement">1. Agreement to these terms</h2>
+  <p>
+    These Terms of Service ("Terms") are an agreement between you and Kornerstack ("we", "us")
+    covering your use of Ledger on iOS, Android and the web (the "Service"). By creating an account
+    or using the Service, you agree to these Terms and to our
+    <a href="https://kornerstack.com/ledger/privacy">Privacy Policy</a>. If you don't agree, please
+    don't use the Service.
+  </p>
+  <p>
+    You must be at least 16 years old, or the age of majority where you live if that is higher, unless
+    a parent or guardian agrees to these Terms on your behalf.
+  </p>
+
+  <h2 id="service">2. The service</h2>
+  <p>
+    Ledger lets you record and organise subscriptions, budgets, expenses, savings, income, mileage and
+    related receipts, and view summaries, reminders and tax estimates based on what you enter.
+  </p>
+  <p>
+    Ledger does not connect to your bank or card accounts, move money, make payments, or cancel
+    subscriptions for you. Everything it shows is based on information you provide.
+  </p>
+  <p>
+    We continually improve Ledger, so features may be added, changed or removed. If we remove a feature
+    in a way that significantly affects you, we'll try to give you reasonable notice.
+  </p>
+
+  <h2 id="not-advice">3. Not financial, tax or legal advice</h2>
+  <p>
+    Ledger is a record-keeping tool. Nothing in the Service is financial, investment, tax, accounting
+    or legal advice, and using it does not create any professional relationship between you and us.
+  </p>
+  <ul>
+    <li><strong>Tax estimates</strong>, including quarterly estimates and deductible mileage, are simplified calculations from the figures you enter and general rates. They may not reflect your full situation, current law or every rule that applies to you.</li>
+    <li><strong>Currency conversions</strong> use exchange rates from a third-party provider that may be delayed or differ from the rate your bank applies.</li>
+    <li><strong>Reminders</strong>, such as renewal or tax-due notifications, are a convenience. They may be late or not arrive at all, for example if notifications are turned off or your device is offline.</li>
+  </ul>
+  <p>
+    You are responsible for your own financial decisions and tax filings. Please consult a qualified
+    professional before relying on any figure from Ledger.
+  </p>
+
+  <h2 id="account">4. Your account</h2>
+  <ul>
+    <li>Give us accurate sign-up information and keep your email address current.</li>
+    <li>Keep your password secure, and tell us promptly at <a href="mailto:support@kornerstack.com">support@kornerstack.com</a> if you think your account has been accessed without permission.</li>
+    <li>You're responsible for activity on your account. Your account is personal to you and may not be shared or transferred.</li>
+  </ul>
+
+  <h2 id="your-content">5. Your content</h2>
+  <p>
+    "Your content" means the records, notes, images and other information you put into Ledger. You
+    own your content. We don't claim any ownership of it.
+  </p>
+  <p>
+    You give us a limited licence to store, copy, process and display your content only as needed to
+    run the Service for you: for example, syncing it to your devices, calculating totals and sending
+    the notifications you've turned on. This licence ends when you delete the content or your account,
+    except for copies held briefly in backups as described in our Privacy Policy.
+  </p>
+  <p>
+    You're responsible for your content and confirm you have the right to upload it, including
+    receipts and invoices that contain other people's information. Keep your own copies of anything
+    important. You can export your data from Settings → Export Data at any time.
+  </p>
+
+  <h2 id="acceptable-use">6. Acceptable use</h2>
+  <p>You agree not to:</p>
+  <ul>
+    <li>use the Service for anything unlawful, fraudulent or harmful;</li>
+    <li>upload malware, or content that infringes someone else's rights;</li>
+    <li>try to access other users' accounts or data, or probe, scan or test the Service's security without our written permission;</li>
+    <li>interfere with or overload the Service, or get around plan limits or other technical restrictions;</li>
+    <li>scrape, copy, resell or reverse engineer the Service, except where the law expressly allows it;</li>
+    <li>create accounts through automated means, or under false pretences.</li>
+  </ul>
+
+  <h2 id="beta">7. Beta and plan limits</h2>
+  <p>
+    Ledger is currently offered free of charge as a beta. Beta features may be incomplete, may change,
+    and may contain bugs. Free and beta accounts have limits, such as the number of subscriptions,
+    budgets and income sources you can track. The app shows your current limits. We may change these
+    limits in future, but we won't delete content you've already created because a limit changed.
+  </p>
+
+  <h2 id="paid-plans">8. Paid plans</h2>
+  <p>If we offer paid plans, the following applies when you buy one:</p>
+  <ul>
+    <li><strong>Billing:</strong> purchases are made through the Apple App Store or Google Play and charged to your account there, at the price shown before you confirm.</li>
+    <li><strong>Automatic renewal:</strong> subscriptions renew automatically at the end of each period unless you cancel at least 24 hours before the period ends.</li>
+    <li><strong>Cancelling:</strong> manage or cancel in your Apple or Google account settings. Deleting the app or your Ledger account does not cancel a subscription by itself. After you cancel, paid features stay available until the end of the current period.</li>
+    <li><strong>Free trials:</strong> if a trial is offered, it converts to a paid subscription at the end unless you cancel before then.</li>
+    <li><strong>Refunds:</strong> refunds are handled by Apple or Google under their own policies. Nothing in these Terms limits any refund right you have under consumer law.</li>
+    <li><strong>Price changes:</strong> we'll give advance notice of price changes as required by the app store and applicable law. If you don't agree to a new price, you can cancel before it takes effect.</li>
+  </ul>
+
+  <h2 id="third-party">9. Third-party services</h2>
+  <p>
+    The Service relies on third parties, including Apple, Google, RevenueCat (purchases), Expo (push
+    notifications) and an exchange-rate provider. Their services are governed by their own terms, and
+    we aren't responsible for them. Links to outside websites are provided for convenience only.
+  </p>
+
+  <h2 id="ip">10. Our intellectual property</h2>
+  <p>
+    The Service, including its software, design, text, graphics and the Ledger name and logo, belongs
+    to Kornerstack or its licensors. Subject to these Terms, we give you a personal, non-exclusive,
+    non-transferable, revocable licence to use the app for your own personal or small-business record
+    keeping.
+  </p>
+  <p>
+    If you send us feedback or suggestions, we may use them without any obligation to you.
+  </p>
+
+  <h2 id="termination">11. Ending your use of Ledger</h2>
+  <p>
+    You can stop using Ledger at any time, and delete your account from Settings → Data &amp; Privacy.
+    Deleting your account permanently removes your data as described in our Privacy Policy, and it
+    cannot be undone.
+  </p>
+  <p>
+    We may suspend or close your account if you seriously or repeatedly break these Terms, if we're
+    required to by law, or to protect the Service or other users. Where reasonable, we'll tell you
+    first and give you a chance to export your data. If we ever shut the Service down entirely, we'll
+    give at least 30 days' notice so you can export your data.
+  </p>
+  <p>
+    Sections that by their nature should continue after these Terms end will continue, including
+    sections 3, 10, 12, 13, 14 and 15.
+  </p>
+
+  <h2 id="disclaimers">12. Disclaimers</h2>
+  <p>
+    To the fullest extent permitted by law, the Service is provided "as is" and "as available". We
+    don't promise that it will be uninterrupted, error-free or secure, that calculations, estimates or
+    exchange rates will be accurate or complete, or that data will never be lost. We disclaim all
+    implied warranties, including merchantability, fitness for a particular purpose and
+    non-infringement.
+  </p>
+  <p>
+    Some places don't allow certain warranties to be excluded, so some of these disclaimers may not
+    apply to you.
+  </p>
+
+  <h2 id="liability">13. Limitation of liability</h2>
+  <p>
+    To the fullest extent permitted by law, Kornerstack will not be liable for any indirect,
+    incidental, special, consequential or punitive damages, or for lost profits, revenue, data,
+    savings, or tax penalties and interest, arising from or related to your use of the Service, even
+    if we were told such damages were possible.
+  </p>
+  <p>
+    Our total liability for any claim related to the Service is limited to the greater of (a) the
+    amount you paid us for the Service in the 12 months before the claim arose, and (b) CAD $50.
+  </p>
+  <p>
+    Nothing in these Terms limits liability that cannot be limited by law, such as liability for fraud,
+    or for death or personal injury caused by negligence, or your statutory rights as a consumer.
+  </p>
+
+  <h2 id="indemnity">14. Indemnity</h2>
+  <p>
+    To the extent permitted by law, you agree to indemnify Kornerstack against third-party claims,
+    losses and reasonable costs arising from your content or your breach of these Terms.
+  </p>
+
+  <h2 id="law">15. Governing law and disputes</h2>
+  <p>
+    These Terms are governed by the laws of the Province of [PROVINCE] and the federal laws of Canada
+    that apply there, without regard to conflict-of-law rules. Before starting any formal proceeding,
+    please contact us at <a href="mailto:support@kornerstack.com">support@kornerstack.com</a> so we
+    can try to resolve the issue informally. If that doesn't work within 30 days, disputes will be
+    resolved in the courts of [PROVINCE].
+  </p>
+  <p>
+    If you're a consumer, you keep any protections of the laws where you live, including the right to
+    bring a claim in your local courts where that law provides it.
+  </p>
+
+  <h2 id="app-stores">16. App store terms</h2>
+  <p>
+    If you downloaded Ledger from the Apple App Store, you and we acknowledge that:
+  </p>
+  <ul>
+    <li>these Terms are between you and Kornerstack only, not Apple, and Kornerstack, not Apple, is solely responsible for the app and its content;</li>
+    <li>your licence to use the app is limited to Apple-branded devices you own or control, as permitted by the App Store Terms of Service;</li>
+    <li>Apple has no obligation to provide maintenance or support for the app;</li>
+    <li>if the app fails to meet an applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any). To the extent permitted by law, Apple has no other warranty obligation for the app;</li>
+    <li>Kornerstack, not Apple, is responsible for addressing any claims relating to the app, including product liability claims, claims that it fails to meet legal or regulatory requirements, consumer protection or privacy claims, and claims that it infringes a third party's intellectual property;</li>
+    <li>you confirm you are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country, and are not on any U.S. Government list of prohibited or restricted parties;</li>
+    <li>you must comply with any applicable third-party terms when using the app; and</li>
+    <li>Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</li>
+  </ul>
+  <p>
+    If you downloaded Ledger from Google Play, Google Play's terms also apply to your download and any
+    purchases.
+  </p>
+
+  <h2 id="changes">17. Changes to these terms</h2>
+  <p>
+    We may update these Terms from time to time. We'll update the effective date above, and for
+    material changes we'll notify you in the app or by email at least 30 days before they take effect.
+    If you keep using Ledger after that, the updated Terms apply. If you don't agree, you can stop
+    using the Service and delete your account.
+  </p>
+
+  <h2 id="general">18. General</h2>
+  <ul>
+    <li><strong>Entire agreement:</strong> these Terms and the Privacy Policy are the whole agreement between you and us about the Service.</li>
+    <li><strong>Severability:</strong> if any part of these Terms is found unenforceable, the rest stays in effect.</li>
+    <li><strong>No waiver:</strong> if we don't enforce a provision right away, we haven't given up the right to enforce it later.</li>
+    <li><strong>Assignment:</strong> you may not transfer these Terms. We may transfer them as part of a merger, acquisition or sale of assets, and these Terms will continue to apply.</li>
+    <li><strong>Events beyond our control:</strong> we aren't responsible for delays or failures caused by events outside our reasonable control.</li>
+  </ul>
+
+  <h2 id="contact">19. Contact us</h2>
+  <p>
+    Questions about these Terms:<br>
+    Kornerstack<br>
+    <a href="mailto:support@kornerstack.com">support@kornerstack.com</a>
+  </p>
+  <p>
+    For privacy requests, email <a href="mailto:privacy@kornerstack.com">privacy@kornerstack.com</a>.
+  </p>
+
+  <footer>
+    &copy; 2026 Kornerstack. Ledger is a trademark of Kornerstack.
+    &middot; <a href="https://kornerstack.com/ledger/privacy">Privacy Policy</a>
+  </footer>
+</main>
+</body>
+</html>
